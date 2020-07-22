@@ -1,12 +1,12 @@
 # itheimaHomework
 
 ### day01
-&ensp;1.变量 \
-&ensp;2.基本数据类型
+&ensp;&ensp;1.变量 \
+&ensp;&ensp;2.基本数据类型
 ### day02
-1.类型转换：隐式转换，强制类型转换\
-2.运算符\
-3.流程控制语句\
+&ensp;&ensp;1.类型转换：隐式转换，强制类型转换\
+&ensp;&ensp;2.运算符\
+&ensp;&ensp;3.流程控制语句\
   if(){}  
   if(){}else  
   if() ... else if(){}  
@@ -14,4 +14,4 @@
     case :  
   }  
   ### day03
-  1.
+ &ensp;&ensp; 1.
