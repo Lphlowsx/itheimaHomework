@@ -7,10 +7,9 @@
 &ensp;&ensp;1.类型转换：隐式转换，强制类型转换\
 &ensp;&ensp;2.运算符\
 &ensp;&ensp;3.流程控制语句\
-  if(){}  
-  if(){}else  
-  if() ... else if(){}  
-  switch(){  
+ &ensp;&ensp;&ensp; if(){if(){}else  
+ &ensp;&ensp;if() ... else if(){}  
+ &ensp;&ensp; switch(){  
     case :  
   }  
   ### day03
