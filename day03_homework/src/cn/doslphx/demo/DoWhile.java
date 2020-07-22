@@ -1,4 +1,4 @@
-package cn.doslphx;
+package cn.doslphx.demo;
 
 public class DoWhile {
     public static void main(String[] args) {

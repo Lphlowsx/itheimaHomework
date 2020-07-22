@@ -1,4 +1,4 @@
-package cn.doslphx;
+package cn.doslphx.demo;
 
 import java.util.Scanner;
 
