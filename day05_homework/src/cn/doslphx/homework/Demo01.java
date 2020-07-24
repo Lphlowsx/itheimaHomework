@@ -8,4 +8,13 @@ package cn.doslphx.homework;
  */
 
 public class Demo01 {
+    public static void main(String[] args) {
+
+        //打印数组
+        int[] arr = {12,23,34,45,56};
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
 }
