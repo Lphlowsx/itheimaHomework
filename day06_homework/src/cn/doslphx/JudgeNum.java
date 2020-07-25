@@ -16,7 +16,10 @@ public class JudgeNum {
             if (i % 2 != 0) {
                 System.out.println("您输入的奇数为：" + i);
             }
+    }
 
-
+    //带返回值的方法
+    public static int returnTest(int num, int num1) {
+        return num + num1;
     }
 }

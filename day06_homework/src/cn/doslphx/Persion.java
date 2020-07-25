@@ -7,14 +7,20 @@ package cn.doslphx;
  *  from  那时还是个菜鸟
  */
 
- public class Persion {
+public class Persion {
 
-   public void eat(){
+    void eat() {
         System.out.println("吃饭时间到！");
-    };
+    }
 
-    void run(){};
-    void go(){};
+    void study() {
+        System.out.println("该学习了");
+    }
+
+    void sleep() {
+        System.out.println("该睡觉了");
+    }
+
 
 
 }

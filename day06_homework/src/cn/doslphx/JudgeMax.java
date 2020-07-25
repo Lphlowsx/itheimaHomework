@@ -8,4 +8,12 @@ package cn.doslphx;
  */
 
 public class JudgeMax {
+
+    int maxNum(int x, int y) {
+        if (x > y) {
+            return x;
+        }else {
+            return y;
+        }
+    }
 }

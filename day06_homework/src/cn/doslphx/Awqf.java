@@ -8,4 +8,12 @@ package cn.doslphx;
  */
 
 public class Awqf {
+
+    public static void main(String[] args) {
+
+    }
+
+
+
+
 }
