@@ -18,38 +18,36 @@ public class Demo06 {
             请输入一个整数数字：
             50
             生成的新数组是：12 14 23 45 50 66 68 70 77 90
+
         */
 
         int[] arr = {12, 14, 23, 45, 66, 68, 70, 77, 90, 91};
-        int[] arr2 = new int[11];
-        int index = 0;
-        System.out.println("请输入：");
+        int[] brr = new int[11];
+
         Scanner sc = new Scanner(System.in);
-        int temp = sc.nextInt();
+        System.out.println("请输入：");
+        int num = sc.nextInt();
+        int index = 0;
 
-
-        for (int i = 0; i <= arr.length; i++) {
-                if(arr[i] <= temp){
-                    arr2[i] = arr[i];
-                    index = i + 1;
-                }else {
-                    arr2[i+1] = arr[i];
-                }
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]<= num){
+                brr[i] = arr[i];
+                index = i + 1;
+            } else {
+                brr[i+1] = arr[i];
             }
+        }
 
-        arr2[index] = temp;
+        brr[index] = num;
 
         System.out.print("生成的新数组是：");
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
-            System.out.println();
-            System.out.println();
+        for (int i = 0; i < brr.length; i++) {
+            System.out.print(brr[i] + " ");
 
         }
 
 
-        }
-
+    }
 
 
 }
