@@ -9,6 +9,7 @@ package cn.doslphx;
 
 public class JudgeMax {
 
+    //用返回值判断两个数的最大值
     int maxNum(int x, int y) {
         if (x > y) {
             return x;
