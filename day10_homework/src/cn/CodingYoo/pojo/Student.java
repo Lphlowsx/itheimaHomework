@@ -12,6 +12,8 @@ public class Student {
     private String name;
     private int age;
     private String birthday;
+    private int yuwen;
+    private int shuxue;
 
     public Student(String sid, String name, String age, String birthday) {
     }
@@ -21,6 +23,28 @@ public class Student {
         this.name = name;
         this.age = age;
         this.birthday = birthday;
+    }
+
+    public Student(String name, int yuwen, int shuxue) {
+        this.name = name;
+        this.yuwen = yuwen;
+        this.shuxue = shuxue;
+    }
+
+    public int getYuwen() {
+        return yuwen;
+    }
+
+    public void setYuwen(int yuwen) {
+        this.yuwen = yuwen;
+    }
+
+    public int getShuxue() {
+        return shuxue;
+    }
+
+    public void setShuxue(int shuxue) {
+        this.shuxue = shuxue;
     }
 
     public Student(String name, String age, String birthday) {
@@ -61,10 +85,9 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "sid='" + sid + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", birthday='" + birthday + '\'' +
+                "name='" + name + '\'' +
+                ", yuwen=" + yuwen +
+                ", shuxue=" + shuxue +
                 '}';
     }
 }
