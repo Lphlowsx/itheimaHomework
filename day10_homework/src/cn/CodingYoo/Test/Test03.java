@@ -20,38 +20,31 @@ public class Test03 {
         //System.out.println(Arrays.toString(arr));
         //将产生的随机数存入数组
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = r.nextInt(100 + 1);
+            arr[i] = r.nextInt(100) + 1;
             if (arr[i] % 2 == 0 && i % 2 == 0) {
-                System.out.println("索引和元素都是偶数的有" + i +" :" + arr[i]);
+                System.out.println("索引和元素都是偶数的有" + i + " :" + arr[i]);
             }
-
         }
         //System.out.println(Arrays.toString(arr));
         int max = arr[0];
         int min = arr[0];
         int avg = 0;
         int sum = 0;
-        //计算最大值
         for (int i = 0; i < arr.length; i++) {
+            //计算最大值
             if (max < arr[i]) {
                 max = arr[i];
             }
-        }
-        System.out.println("最大值是：" + max);
-        //计算最小值
-        for (int i = 0; i < arr.length; i++) {
+            //计算最小值
             if (min > arr[i]) {
                 min = arr[i];
             }
-        }
-        System.out.println("最小值是：" + min);
-        //求和
-        for (int i = 0; i < arr.length; i++) {
+            //求和
             sum += arr[i];
         }
-
-        //求平均值
-        avg = sum / arr.length;
+        System.out.println("最大值是：" + max);
+        System.out.println("最小值是：" + min);
+        avg = sum / arr.length; //求平均值
         System.out.println("平均值是：" + avg);
 
     }
