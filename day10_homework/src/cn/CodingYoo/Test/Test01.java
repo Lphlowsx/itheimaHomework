@@ -85,6 +85,7 @@ public class Test01 {
         list.add(stu);
         // 4. 给出添加成功的提示信息
         System.out.println("添加成功!");
+
     }
 
     //修改学生
