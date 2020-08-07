@@ -12,6 +12,15 @@ import cn.CodingYoo.pojo.Student;
 public class StudentDao {
     //创建学生对象数组
     private static Student[] stud = new Student[5];
+
+    public static void updateStudent(String updateId, Student newStu) {
+        //查找id所在索引位置
+        int index = getIndex(updateId);
+        //将索引位置元素进行替换
+        stud[index] = newStu;
+
+    }
+
     public boolean addStudent(Student stu) {
 
         //判断学生数组是否填满
@@ -44,7 +53,7 @@ public class StudentDao {
         stud[index] = null;
     }
 
-    public int getIndex(String id){
+    public static int getIndex(String id){
         int index = -1;
         for (int i = 0; i < stud.length; i++) {
             Student student = stud[i];

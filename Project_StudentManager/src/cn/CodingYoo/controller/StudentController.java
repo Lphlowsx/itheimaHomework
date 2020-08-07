@@ -16,6 +16,7 @@ public class StudentController {
 
     private StudentService studentService = new StudentService();
     private Scanner sc = new Scanner(System.in);
+
     public void start() {
         lo:
         while (true) {
@@ -52,8 +53,8 @@ public class StudentController {
     //查看学生信息
     private void findAllStudent() {
         //调用service中的获取方法，得到学生对象数组
-        Student[] stu =  studentService.findAllStudent();
-        if(stu == null){
+        Student[] stu = studentService.findAllStudent();
+        if (stu == null) {
             System.out.println("查无信息，请添加后重试！");
             return;
         }
@@ -61,21 +62,46 @@ public class StudentController {
         System.out.println("学号\t\t姓名\t年龄\t生日");
         for (int i = 0; i < stu.length; i++) {
             Student student = stu[i];
-            if(student != null){
-                System.out.println(student.getId()+"\t\t\t"+student.getName()+"\t"+student.getAge()+"\t\t"+student.getBirthday());
+            if (student != null) {
+                System.out.println(student.getId() + "\t\t\t" + student.getName() + "\t" + student.getAge() + "\t\t" + student.getBirthday());
             }
         }
     }
 
     //修改学生信息
     public void updateStudent() {
+        String updateId;
 
+        while (true) {
+            System.out.println("请输入您要修改的学生id：");
+            updateId = sc.next();
+            boolean exists = studentService.isExists(updateId);
+            if (!exists) {
+                System.out.println("您输入的Id不存在，请重新输入：");
+            } else {
+                break;
+            }
+
+            System.out.println("请输入学生姓名:");
+            String name = sc.next();
+            System.out.println("请输入学生年龄:");
+            String age = sc.next();
+            System.out.println("请输入学生生日:");
+            String birthday = sc.next();
+
+            Student newStu = new Student();
+            newStu.setName(name);
+            newStu.setAge(age);
+            newStu.setBirthday(birthday);
+            StudentService.updateStudent(updateId,newStu);
+            System.out.println("修改成功！");
+        }
     }
 
     //删除学生信息
     public void deleteStudentById() {
-        Student[] stu =  studentService.findAllStudent();
-        if(stu == null){
+        Student[] stu = studentService.findAllStudent();
+        if (stu == null) {
             System.out.println("查无信息，请添加后重试！");
             return;
         }

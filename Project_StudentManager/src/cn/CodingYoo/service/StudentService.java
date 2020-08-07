@@ -13,6 +13,10 @@ import cn.CodingYoo.pojo.Student;
 public class StudentService {
     private StudentDao studentDao = new StudentDao();
 
+    public static void updateStudent(String updateId, Student newStu) {
+        StudentDao.updateStudent(updateId,newStu);
+    }
+
     public boolean addStudent(Student stu) {
         return studentDao.addStudent(stu);
     }
