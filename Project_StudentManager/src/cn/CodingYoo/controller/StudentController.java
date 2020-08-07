@@ -45,9 +45,20 @@ public class StudentController {
     }
 
     public void addStudent() {
+        StudentService studentService = new StudentService();
+        //键盘录入学生对象
+        String id;
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入学生id:");
-        String id = sc.next();
+        while (true) {
+            System.out.println("请输入学生id:");
+            id = sc.next();
+            boolean flag = studentService.isExists(id);
+            if (flag) {
+                System.out.println("学号已存在，请重新输入：");
+            } else {
+                break;
+            }
+        }
         System.out.println("请输入学生姓名:");
         String name = sc.next();
         System.out.println("请输入学生年龄:");
@@ -61,18 +72,16 @@ public class StudentController {
         stu.setAge(age);
         stu.setBirthday(birthday);
         //将学生对象，传递给StudentService中的addStudent方法
-        StudentService studentService = new StudentService();
-       boolean result = studentService.addStudent(stu);
+        // StudentService studentService = new StudentService();
+        boolean result = studentService.addStudent(stu);
 
-       if(result){
-           System.out.println("添加成功！");
-       }else {
-           System.out.println("添加失败！");
-       }
+        if (result) {
+            System.out.println("添加成功！");
+        } else {
+            System.out.println("添加失败！");
+        }
 
     }
-
-
 
 
 }

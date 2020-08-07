@@ -10,9 +10,10 @@ package cn.CodingYoo.dao;
 import cn.CodingYoo.pojo.Student;
 
 public class StudentDao {
+    //创建学生对象数组
+    private  Student[] stud = new Student[5];
     public boolean addStudent(Student stu) {
-        //创建学生对象数组
-        Student[] stud = new Student[5];
+
         //判断学生数组是否填满
         int index = -1;
         for (int i = 0; i < stud.length; i++) {
@@ -30,5 +31,9 @@ public class StudentDao {
             return true;
         }
 
+    }
+
+    public Student[] findAllStudent() {
+        return stud;
     }
 }
