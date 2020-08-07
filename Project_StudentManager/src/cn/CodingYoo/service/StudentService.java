@@ -19,7 +19,6 @@ public class StudentService {
 
     public boolean isExists(String id) {
         Student[] student = studentDao.findAllStudent();
-
         boolean exists = false;
         //遍历数组，获取每一个学生对象，准备进行判断
         for (int i = 0; i < student.length; i++) {
@@ -30,5 +29,28 @@ public class StudentService {
             }
         }
         return exists;
+    }
+
+    public Student[] findAllStudent() {
+        //调用dao的findall方法
+        Student[] allStudent = studentDao.findAllStudent();
+        //数组中只要有一个不是null，就打印
+        boolean flag = false;
+        for (int i = 0; i < allStudent.length; i++) {
+            Student stu = allStudent[i];
+            if(stu != null){
+                flag = true;
+                break;
+            }
+        }
+        if(flag){
+            return allStudent;
+        }else {
+            return null;
+        }
+    }
+
+    public void deleteStudentById(String delId) {
+        studentDao.deleteStudentById(delId);
     }
 }
