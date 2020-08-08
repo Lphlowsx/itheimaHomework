@@ -5,6 +5,13 @@ package cn.CodingYoo.Polymorphic;
  *  project:  itheimaHomework
  *  github:   https://github.com/CodingYoo
  *  from  那时还是个菜鸟
+ *
+ *
+ * 多态中成员变量访问特点：
+ * 成员变量：编译看左边（父类），执行看左边（父类）
+ * 成员方法：编译看左边（父类），执行看右边（子类）
+ *
+ *
  */
 
 public class Test {
@@ -13,17 +20,24 @@ public class Test {
         cat a = new cat();
         //多态方式
         animal b = new cat();
-
         a.eat();
+        //执行子类方法(右边)
         b.eat();
+        System.out.println(b.num);
     }
 }
-class animal{
-    void eat(){
+
+class animal {
+    int num = 10;
+
+    void eat() {
         System.out.println("动物吃鱼");
     }
 }
-class cat extends animal{
+
+class cat extends animal {
+    int num = 11;
+
     @Override
     void eat() {
         System.out.println("猫吃鱼！");
