@@ -38,18 +38,17 @@ public class Test {
 
 abstract class animal {
     //int num = 10;
-    void eat() {}
+    public abstract void eat();
 }
 class dog extends animal{
-    @Override
-    void eat() {
+    public void eat() {
         System.out.println("狗吃骨头！");
     }
 }
 class cat extends animal {
     int num = 11;
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("猫吃鱼！");
     }
 }
