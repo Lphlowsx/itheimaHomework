@@ -23,21 +23,31 @@ public class Test {
         a.eat();
         //执行子类方法(右边)
         b.eat();
-        System.out.println(b.num);
+       // System.out.println(b.num);
+
+        //多态的方法调用
+        useAnimal(new cat());
+        useAnimal(new dog());
+
+
+    }
+    public static void useAnimal(animal a){
+        a.eat();
     }
 }
 
-class animal {
-    int num = 10;
-
+abstract class animal {
+    //int num = 10;
+    void eat() {}
+}
+class dog extends animal{
+    @Override
     void eat() {
-        System.out.println("动物吃鱼");
+        System.out.println("狗吃骨头！");
     }
 }
-
 class cat extends animal {
     int num = 11;
-
     @Override
     void eat() {
         System.out.println("猫吃鱼！");
