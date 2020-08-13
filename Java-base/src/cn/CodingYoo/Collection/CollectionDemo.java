@@ -29,5 +29,10 @@ public class CollectionDemo {
             Student student = it.next();
             System.out.println(student);
         }
+        System.out.println("=========================================");
+        //使用增强for遍历集合元素
+        for (Student student : list) {
+            System.out.println(student);
+        }
     }
 }
