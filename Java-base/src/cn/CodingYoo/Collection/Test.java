@@ -11,5 +11,6 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("成功推送至GitHub和gitee");
         System.out.println("成功推送至GitHub和gitee");
+        System.out.println("成功推送至GitHub和gitee");
     }
 }
