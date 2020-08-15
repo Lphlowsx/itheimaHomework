@@ -30,7 +30,7 @@ public class HashMapTest {
             //System.out.println(key);
             System.out.println(stringIntegerEntry);  //遍历hashmap
         }
-
+        System.out.println("+++++++++++++++++++++++++++++++++++");
 
         //第二种遍历方式：先获取每一个key，然后再获得值
         Set<String> key = hs.keySet();
@@ -38,6 +38,14 @@ public class HashMapTest {
             Integer value = hs.get(s);
             System.out.println(value);
         }
+        System.out.println("+++++++++++++++++++++++++++++++++++");
+        //第三种遍历方式
+        hs.forEach(
+                (String key1, Integer value) ->{
+                    System.out.println(key1);
+                    System.out.println(value);
+                }
+    );
 
     }
 }
