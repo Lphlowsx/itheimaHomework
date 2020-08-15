@@ -14,7 +14,7 @@ public class HashSetTest02 {
     public static void main(String[] args) {
         HashSet<Student> hs = new HashSet<>();
 
-        //修改hashSet默认的由地制值计算的hash值，改为由元素确定hash值
+        //修改hashSet默认的由地制值计算的hash值，改为由元素确定hash值（hashset存储自定义对象）
         //  重写  hashcode（）和equals()方法即可
         //下面的张三确定为一个人，只存入一次
         Student s1 = new Student("zhangsan","10","n");
