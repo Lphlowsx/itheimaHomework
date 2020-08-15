@@ -10,7 +10,7 @@ package cn.CodingYoo.Collection.Map;
 
 public class VariableElement {
 
-    //可变参数
+    //可变参数:其实是一个数组，如果有多个参数，则放在可变参数之前，不然会报错
     public static void main(String[] args) {
         int sum = getSum(1, 2, 3, 5);
         System.out.println(sum);
