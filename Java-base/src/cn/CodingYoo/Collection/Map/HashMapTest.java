@@ -17,18 +17,26 @@ public class HashMapTest {
         // HashMap使用练习
         HashMap<String, Integer> hs = new HashMap<>();
 
-        hs.put("吕朋辉",22);
-        hs.put("小王",21);
-        hs.put("小山",20);
+        hs.put("吕朋辉", 22);
+        hs.put("小王", 21);
+        hs.put("小山", 20);
 
         //entrySet 为hashmap的键值对 对象
         Set<Map.Entry<String, Integer>> entrySet = hs.entrySet();
         for (Map.Entry<String, Integer> stringIntegerEntry : entrySet) {
-            String key = stringIntegerEntry.getKey();
-            System.out.println(stringIntegerEntry.getValue());
-            System.out.println(stringIntegerEntry.hashCode());
-            System.out.println(key);
+            // String key = stringIntegerEntry.getKey();
+            // System.out.println(stringIntegerEntry.getValue());
+            // System.out.println(stringIntegerEntry.hashCode());
+            //System.out.println(key);
             System.out.println(stringIntegerEntry);  //遍历hashmap
+        }
+
+
+        //第二种遍历方式：先获取每一个key，然后再获得值
+        Set<String> key = hs.keySet();
+        for (String s : key) {
+            Integer value = hs.get(s);
+            System.out.println(value);
         }
 
     }
