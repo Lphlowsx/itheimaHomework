@@ -1,4 +1,7 @@
 package cn.CodingYoo.Collection;
+
+import java.util.Objects;
+
 /*
  *  @author:  CodingYoo
  *  date:     8/13/2020  4:18 PM Thu
@@ -42,6 +45,21 @@ public class Student implements Comparable<Student>{
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(name, student.name) &&
+                Objects.equals(age, student.age) &&
+                Objects.equals(sex, student.sex);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, sex);
     }
 
     @Override
