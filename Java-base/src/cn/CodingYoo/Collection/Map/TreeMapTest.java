@@ -12,6 +12,10 @@ import java.util.TreeMap;
 
 public class TreeMapTest {
     //TreeMap小练习
+    /*
+    * 注意事项：TreeMap是根据键进行排序的，跟值无关
+    *
+    * */
     public static void main(String[] args) {
         TreeMap<String, String> tm = new TreeMap<>();
         tm.put("c", "123");
