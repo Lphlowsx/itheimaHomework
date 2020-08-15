@@ -6,8 +6,7 @@ package cn.CodingYoo.Collection;
  *  github:   https://github.com/CodingYoo
  *  from  那时还是个菜鸟
  */
-
-public class Student {
+public class Student implements Comparable<Student>{
     private String name;
     private String age;
     private String sex;
@@ -52,5 +51,11 @@ public class Student {
                 ", age='" + age + '\'' +
                 ", sex='" + sex + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        int result = this.getAge().compareTo(o.getAge());
+    return result;
     }
 }
