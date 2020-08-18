@@ -18,7 +18,7 @@ public class MyCallable implements Callable<String> {
         for (int i = 0; i < 100; i++) {
             System.out.println("开启" + i);
         }
-        return "结束！";
+        return "线程结束！";
     }
 
 }
