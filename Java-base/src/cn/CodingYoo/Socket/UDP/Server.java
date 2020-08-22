@@ -1,4 +1,4 @@
-package cn.Socket.UDP;
+package cn.CodingYoo.Socket.UDP;
 /*
  *  @author:  CodingYoo
  *  date:     8/22/2020  8:18 AM Sat
@@ -11,7 +11,6 @@ package cn.Socket.UDP;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.SocketException;
 
 public class Server {
     public static void main(String[] args) throws IOException {
