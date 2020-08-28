@@ -10,6 +10,7 @@ package cn.CodingYoo.Collection.CollectionTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class ArrayListDemo {
         int[] arr = {1,2,3};
         System.out.println(Arrays.toString(arr));
 
-        ArrayList<String> list = new ArrayList<>();
+        Collection<String> list = new ArrayList<>();
 
         list.add("吕朋辉");
         list.add("张三");
