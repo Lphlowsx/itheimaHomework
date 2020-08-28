@@ -11,7 +11,7 @@ package cn.CodingYoo.Collection.CollectionTest;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ArrilistDemo {
+public class ArrayListDemo {
     public static void main(String[] args) {
         //集合和数组的对比
         int[] arr = {1,2,3};
