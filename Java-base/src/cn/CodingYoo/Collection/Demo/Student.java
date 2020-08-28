@@ -1,4 +1,4 @@
-package cn.CodingYoo.Collection;
+package cn.CodingYoo.Collection.Demo;
 
 import java.util.Objects;
 

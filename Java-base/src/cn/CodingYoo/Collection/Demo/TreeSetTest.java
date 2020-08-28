@@ -1,4 +1,4 @@
-package cn.CodingYoo.Collection;
+package cn.CodingYoo.Collection.Demo;
 /*
  *  @author:  CodingYoo
  *  date:     8/15/2020  10:05 AM Sat
@@ -7,6 +7,8 @@ package cn.CodingYoo.Collection;
  *  gitee:    https://gitee.com/CodingYoo
  *  from  那时还是个菜鸟
  */
+
+import cn.CodingYoo.Collection.Demo.Student;
 
 import java.util.TreeSet;
 

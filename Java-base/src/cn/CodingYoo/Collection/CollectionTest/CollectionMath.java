@@ -52,9 +52,10 @@ public class CollectionMath {
 
         int size = list.size();
         System.out.println(size);
-//        //使用size()遍历结合
+        //使用size()遍历结合
 //        for (int i1 = 0; i1 < list.size(); i1++) {
-//            System.out.println(i1);
+//            String s = list.get(i1);
+//            System.out.println(s);
 //        }
 
         //移除集合中的元素

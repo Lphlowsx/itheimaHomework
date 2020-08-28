@@ -1,4 +1,4 @@
-package cn.CodingYoo.Collection;
+package cn.CodingYoo.Collection.Demo;
 /*
  *  @author:  CodingYoo
  *  date:     8/13/2020  8:05 PM Thu
