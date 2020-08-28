@@ -49,7 +49,8 @@ public class Student implements Comparable<Student>{//<---注意此处需要指�
     public int compareTo(Student o) {
         //按照年龄进行排序
         //int result = this.age - o.age;
-        int result = this.name.compareTo(o.name);
+        int result = this.name.compareTo(o.name);  //主要判定条件
+        result = result == 0 ? (this.age - o.age) : result;  //只有年龄和姓名完全一致才不添加
         return result;
     }
 }

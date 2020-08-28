@@ -18,10 +18,12 @@ public class TreeSet_02 {
         Student student1 = new Student("a",22);
         Student student2 = new Student("b",23);
         Student student3 = new Student("c",24);
+        Student student4 = new Student("c",22);
 
         stu.add(student1);
         stu.add(student2);
         stu.add(student3);
+        stu.add(student4);
         for (Student student : stu) {
             System.out.println(student);
         }
