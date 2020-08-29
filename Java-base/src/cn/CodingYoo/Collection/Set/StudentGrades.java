@@ -8,8 +8,6 @@ package cn.CodingYoo.Collection.Set;
  *  from  那时还是个菜鸟
  */
 
-import java.util.Comparator;
-
 public class StudentGrades implements Comparable<StudentGrades> {
     private int chinese;
     private int math;
