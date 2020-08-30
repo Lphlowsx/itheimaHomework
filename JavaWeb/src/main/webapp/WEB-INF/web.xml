@@ -33,5 +33,4 @@
         <servlet-name>get</servlet-name>
         <url-pattern>/get</url-pattern>
     </servlet-mapping>
-
 </web-app>
