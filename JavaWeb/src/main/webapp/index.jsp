@@ -1,5 +1,5 @@
-<html>
+<!DOCTYPE html>
 <body>
-<h2>hello world!</h2>
+<h2>中文</h2>
 </body>
 </html>
