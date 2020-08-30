@@ -1,4 +1,4 @@
-package cn.CodingYoo.Selrvlet;
+package cn.CodingYoo.Servlet;
 /*
  *  @author:  CodingYoo
  *  date:     8/30/2020  10:35 AM Sun
@@ -9,7 +9,6 @@ package cn.CodingYoo.Selrvlet;
  */
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
