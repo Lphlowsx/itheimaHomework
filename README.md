@@ -1,4 +1,4 @@
-## Java学习
+## <center>Java学习路线</center>
 > ### 第一部分   
 ### Java 基础
   - 基本数据类型  
