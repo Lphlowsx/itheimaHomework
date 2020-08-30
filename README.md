@@ -1,4 +1,4 @@
-## `Java学习路线`
+## <center>`Java学习路线`</center>
 ### Java 基础
   - 基本数据类型  
   - 流程控制语句  
