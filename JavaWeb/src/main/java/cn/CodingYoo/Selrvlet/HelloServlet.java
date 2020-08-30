@@ -22,7 +22,6 @@ public class HelloServlet extends HttpServlet {
         //ServletOutputStream outputStream = resp.getOutputStream(); 获得输出流
         PrintWriter writer = resp.getWriter();
         writer.println("hello Servlet!");
-
     }
 
     @Override
