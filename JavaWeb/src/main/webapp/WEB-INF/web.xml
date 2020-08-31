@@ -18,17 +18,14 @@
         <servlet-name>hello</servlet-name>
         <url-pattern>/HelloServlet</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>set</servlet-name>
         <servlet-class>cn.CodingYoo.Servlet.ServletContextSet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>set</servlet-name>
         <url-pattern>/set</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>get</servlet-name>
         <servlet-class>cn.CodingYoo.Servlet.ServletContextGet</servlet-class>
@@ -36,5 +33,21 @@
     <servlet-mapping>
         <servlet-name>get</servlet-name>
         <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Requestforward</servlet-name>
+        <servlet-class>cn.CodingYoo.Servlet.ServletRequestForward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Requestforward</servlet-name>
+        <url-pattern>/Request</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>prpo</servlet-name>
+        <servlet-class>cn.CodingYoo.Servlet.ServletContextP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>prpo</servlet-name>
+        <url-pattern>/p</url-pattern>
     </servlet-mapping>
 </web-app>
