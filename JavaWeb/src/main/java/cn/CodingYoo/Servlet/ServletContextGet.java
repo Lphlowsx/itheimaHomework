@@ -20,10 +20,14 @@ public class ServletContextGet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //创建ServletContext对象
         ServletContext servletContext = this.getServletContext();
+        //ServletContext存储资源
         String s = (String) servletContext.getAttribute("username");
+        //ServletContext获得初始化参数
+        String url = servletContext.getInitParameter("url");
         //设置编码
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
         resp.getWriter().println("姓名为："+ s);
+        resp.getWriter().println("url："+ url);
     }
 }
