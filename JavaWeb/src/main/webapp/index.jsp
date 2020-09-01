@@ -11,6 +11,10 @@
     <title>jspTest</title>
 </head>
 <body>
-<h2>中国</h2>
+<form action="${pageContext.request.contextPath}/Redirect" method="get">
+    用户名：<input type="text" name="username"> <br>
+    密码：<input type="password" name="password"><br>
+    <input type="submit" >
+</form>
 </body>
 </html>
