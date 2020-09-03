@@ -19,8 +19,11 @@ public class ServletRes extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+        req.setCharacterEncoding("utf-8");
+        String contextPath = req.getContextPath();
         System.out.println(username);
         System.out.println(password);
+        System.out.println(contextPath);
     }
 
     @Override
