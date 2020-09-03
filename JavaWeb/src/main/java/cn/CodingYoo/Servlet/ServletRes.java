@@ -24,6 +24,8 @@ public class ServletRes extends HttpServlet {
         System.out.println(username);
         System.out.println(password);
         System.out.println(contextPath);
+
+        req.getRequestDispatcher("/Success.jsp").forward(req,resp);
     }
 
     @Override
