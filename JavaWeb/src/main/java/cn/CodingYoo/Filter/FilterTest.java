@@ -13,6 +13,8 @@ import java.io.IOException;
 @WebFilter(filterName = "FilterDemo",urlPatterns = "/*")
 public class FilterTest implements Filter {
     public void destroy() {
+        //过滤器销毁了(在服务器停止时销毁)
+        System.out.println("过滤器销毁了。。。。");
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
@@ -24,7 +26,8 @@ public class FilterTest implements Filter {
     }
 
     public void init(FilterConfig config) throws ServletException {
-
+            //初始化，打印监听日志(服务器启动过滤器完成初始化)
+        System.out.println("过滤器初始化。。。");
     }
 
 }
