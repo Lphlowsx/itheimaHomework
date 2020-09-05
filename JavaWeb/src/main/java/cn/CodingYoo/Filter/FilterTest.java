@@ -16,7 +16,6 @@ public class FilterTest implements Filter {
         //过滤器销毁了(在服务器停止时销毁)
         System.out.println("过滤器销毁了。。。。");
     }
-
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         req.setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
